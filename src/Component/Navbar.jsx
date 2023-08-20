@@ -8,28 +8,27 @@ import Resume from "../Essentials/Shiva-Verma- Resume (2).pdf"
 
 const Navbar = () => {
   const links = [
-    { id: "home", title: "Home" },
-    { id: "about", title: "About" },
-    { id: "skills", title: "Skills" },
-    { id: "projects", title: "Projects" },
-    { id: "contacts", title: "Contacts" },
+    { id: "home", title: "Home", className: "nav-link home" },
+    { id: "about", title: "About", className: "nav-link about" },
+    { id: "skills", title: "Skills", className: "nav-link skills" },
+    { id: "projects", title: "Projects", className: "nav-link projects" },
+    { id: "contact", title: "Contacts", className: "nav-link contact" },
   ]
 
   return (
-    <Flex bg={'#60a5fa'} w={'100%'} color={'white'} position={'sticky'} top={0} >
-      <Box fontSize={30} fontWeight={700} ml={[3, 10, 10]} cursor={'pointer'} >
+    <Flex id="nav-menu" bg={'#60a5fa'} w={'100%'} color={'white'} position={'sticky'} top={0} >
+      <Box id="user-detail-name" fontSize={30} fontWeight={700} ml={[3, 10, 10]} cursor={'pointer'} >
         Shiva Verma
       </Box>
       <Spacer />
       <Box my={'auto'} fontSize={20} display={['none', 'none', 'block']} cursor={'pointer'}  >
         {links.map((ele, i) => {
           return (
-            <Link key={i} to={ele.id} style={{ marginLeft: "30px" }} spy={true} smooth={true} offset={50} duration={500} ><a>{ele.title}</a></Link>
+            <Link className={ele.className} key={i} to={ele.id} style={{ marginLeft: "30px" }} spy={true} smooth={true} offset={50} duration={500} ><a>{ele.title}</a></Link>
           )
         })}
-        <Button fontSize={20} colorScheme='#60a5fa' leftIcon={<BiDownload />} ml={5} >
-        <h5><a href={Resume} target='_blank' download={"Shiva_Verma_Resume.pdf"}>RESUME </a></h5>
-          {/* <ResumeLink href={Resume} target='_blank' download={"Shiva_Verma_Resume.pdf"} >RESUME</ResumeLink> */}
+        <Button target='_blank'  id="resume-button-1" className="nav-link resume" fontSize={20} colorScheme='#60a5fa' leftIcon={<BiDownload />} ml={5} >
+          <ResumeLink  id="resume-link-1" href={Resume} target='_blank' download={"Shiva_Verma_Resume.pdf"}>RESUME </ResumeLink>
         </Button>
         <ChakraProvider theme={theme} >
           <ColorModeSwitcher justifySelf="flex-end" />

@@ -10,7 +10,8 @@ const Projects = () => {
   const projects = [
     { img: Pharamacy, githubLink:"https://github.com/kuntalkumar/Unit_4_Project_Pharmeasy",live:"https://6466188149da42083e1781f6--cerulean-basbousa-d1f219.netlify.app/", title: "PHARMEASY WEBSITE", desc: "PharmEasy is a consumer healthcare “super app” that provides consumers with on-demand, home delivered access to a wide range of prescription, OTC pharmaceutical, other consumer healthcare products, comprehensive diagnostic test services, and teleconsultations thereby serving their healthcare needs.", },
     { img: Alcazar, githubLink:"https://github.com/Dibakardebnath/Alcazar-project",live:"https://neon-marshmallow-b4a4c9.netlify.app/", title: "TRAVEL AGENCY", desc: "Trusted by 80 million Travelers. Aalcazar is the worlds most comprehensive travel, flight and accommodation provider. very easy to access on your smarttree and desktop.", },
-    { img: Adventure, githubLink:"https://github.com/monurajputrko/Adventour",live:"https://adventour-e3im-git-booking-monurajputrko.vercel.app/", title: "ADEVENTURE", desc: "Trusted by 80 million Travelers. Aalcazar is the worlds most comprehensive travel, flight and accommodation provider. very easy to access on your smarttree and desktop.", }
+    { img: Adventure, githubLink:"https://github.com/monurajputrko/Adventour",live:"https://adventour-e3im-git-booking-monurajputrko.vercel.app/", title: "ADEVENTURE", desc: "Trusted by 80 million Travelers. Aalcazar is the worlds most comprehensive travel, flight and accommodation provider. very easy to access on your smarttree and desktop.", },
+    { img: Adventure, githubLink:"https://github.com/monurajputrko/Adventour",live:"https://adventour-e3im-git-booking-monurajputrko.vercel.app/", title: "ADEVENTURE", desc: "Trusted by 80 million Travelers. Aalcazar is the worlds most comprehensive travel, flight and accommodation provider. very easy to access on your smarttree and desktop.", },
   ]
   return (
     <Box>
@@ -23,15 +24,15 @@ const Projects = () => {
           {
             projects.map((ele, i) => {
               return (
-                <GridItem p={5} key={i} m={[2, 5, 10]} outline={'2px solid #1976d2'} borderRadius={10} style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} >
+                <GridItem className="project-card" p={5} key={i} m={[2, 5, 10]} outline={'2px solid #1976d2'} borderRadius={10} style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} >
                   <Image src={ele.img} />
-                  <Text fontSize={25} fontWeight={800} mt={5} >{ele.title}</Text>
-                  <Text>{ele.desc}</Text>
+                  <Text className="project-title" fontSize={25} fontWeight={800} mt={5} >{ele.title}</Text>
+                  <Text className="project-description">{ele.desc}</Text>
                   <Box m={'auto'} w={'fit-content'} >
-                    <Button mr={[2, 2, 10, 10, 40]} style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ cursor: 'pointer' }} leftIcon={<AiFillGithub />} colorScheme='purple' variant='solid'>
+                    <Button className="project-github-link" mr={[2, 2, 10, 10, 40]} style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ cursor: 'pointer' }} leftIcon={<AiFillGithub />} colorScheme='purple' variant='solid'>
                       <Link target='_blank' href={ele.githubLink} >GitHub</Link>
                     </Button>
-                    <Button target='_blank' style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ cursor: 'pointer' }} leftIcon={<RiNavigationLine />} colorScheme='facebook' variant='solid'>
+                    <Button className="project-deployed-link" target='_blank' style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ cursor: 'pointer' }} leftIcon={<RiNavigationLine />} colorScheme='facebook' variant='solid'>
                       <Link target='_blank' href={ele.live} >Live</Link>
                     </Button>
                   </Box>

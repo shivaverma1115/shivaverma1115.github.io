@@ -19,7 +19,7 @@ const Contacts = () => {
   const cancelRef = React.useRef()
   return (
     < >
-      <Box id='contacts' w={'fit-content'} m={'auto'}  >
+      <Box id='contact' w={'fit-content'} m={'auto'}  >
         <Text fontSize={30} fontWeight={600} pt={'15vh'}>Contact Me</Text>
         <Text fontWeight={800} color={'gray'}>Meet you soon ...</Text>
       </Box>
@@ -38,13 +38,13 @@ const Contacts = () => {
           <Text my={5} fontWeight={800} color={'gray'}>You can also Contact Me...</Text>
         </Box>
         <Flex maxW={'50vh'}m={'auto'} >
-          <Box fontSize={30} w={'fit-content'} m={'auto'} >
+          <Box id="contact-github" fontSize={30} w={'fit-content'} m={'auto'} >
             <Link target='_blank' href='https://github.com/shivaverma1115' ><AiFillGithub /></Link>
           </Box>
-          <Box fontSize={30} w={'fit-content'} m={'auto'} >
+          <Box  id="contact-linkedin" fontSize={30} w={'fit-content'} m={'auto'} >
             <Link target='_blank' href='https://www.linkedin.com/in/developer-shiva-7a8450248/' ><AiOutlineLinkedin /></Link>
           </Box>
-          <Box fontSize={30} w={'fit-content'} m={'auto'} >
+          <Box id="contact-phone" fontSize={30} w={'fit-content'} m={'auto'} >
             <>
               <AiTwotonePhone onClick={onOpen}/>
               <AlertDialog
@@ -66,7 +66,7 @@ const Contacts = () => {
               </AlertDialog>
             </>
           </Box>
-          <Box fontSize={30} w={'fit-content'} m={'auto'} >
+          <Box id="contact-email" fontSize={30} w={'fit-content'} m={'auto'} >
             <Link target='_blank' href='https://shivaverma1115@gmail.com' ><AiOutlineMail /></Link>
           </Box>
         </Flex>
