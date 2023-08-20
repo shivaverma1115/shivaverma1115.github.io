@@ -57,17 +57,34 @@ const Contacts = () => {
                 <AlertDialogOverlay />
 
                 <AlertDialogContent >
-                  {/* <AlertDialogHeader>Mobile Contact</AlertDialogHeader> */}
                   <AlertDialogCloseButton />
-                  <AlertDialogBody  py={5} fontSize={15}fontWeight={500} >
-                    WhatsApp No. :- +91-8004716907
+                  <AlertDialogBody   py={5} fontSize={15}fontWeight={500} >
+                    WhatsApp No. :- <spna id="contact-phone">+91-8004716907</spna>
                   </AlertDialogBody>
                 </AlertDialogContent>
               </AlertDialog>
             </>
           </Box>
           <Box id="contact-email" fontSize={30} w={'fit-content'} m={'auto'} >
-            <Link target='_blank' href='https://shivaverma1115@gmail.com' ><AiOutlineMail /></Link>
+            <>
+              <AiOutlineMail onClick={onOpen}/>
+              <AlertDialog
+                motionPreset='slideInBottom'
+                leastDestructiveRef={cancelRef}
+                onClose={onClose}
+                isOpen={isOpen}
+                isCentered
+              >
+                <AlertDialogOverlay />
+
+                <AlertDialogContent >
+                  <AlertDialogCloseButton />
+                  <AlertDialogBody   py={5} fontSize={15}fontWeight={500} >
+                    Email :- <spna  id="contact-email">shivaverma1115@gmail.com</spna>
+                  </AlertDialogBody>
+                </AlertDialogContent>
+              </AlertDialog>
+            </>
           </Box>
         </Flex>
         <Box m={'auto'} w={'90%'} >

@@ -10,7 +10,7 @@ const About = () => {
 
       <Box w={'90%'} m={'auto'} >
         <Box textAlign={'center'} >
-          <Text fontSize={30} fontWeight={600} >ABOUT ME</Text>
+          <Text fontSize={30} fontWeight={600} >About</Text>
           <Text fontWeight={800} color={'gray'} >Know about me?</Text>
         </Box>
         <Box>
@@ -36,8 +36,8 @@ const About = () => {
           </Box>
         </Box>
       </Box>
-      <Box className="home-img" m={'auto'} maxW={['100%','100%','30%']} >
-        <img src={ShivaPic}></img>
+      <Box  m={'auto'} maxW={['100%','100%','30%']} >
+        <img className="home-img" src={ShivaPic}></img>
       </Box>
     </Flex>
   )
