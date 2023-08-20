@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.56b51ef7.js",
+    "main.js": "/static/js/main.d7636ff6.js",
     "static/media/ShivaPic1-modified.png": "/static/media/ShivaPic1-modified.09adc597b4a9bb88fcb6.png",
     "static/media/Alcazar.png": "/static/media/Alcazar.efd13efd260b59fb788f.png",
     "static/media/pharmacy.png": "/static/media/pharmacy.69fc8d54a312eb7f3a26.png",
@@ -8,9 +8,9 @@
     "static/media/Shiva-Verma- Resume (2).pdf": "/static/media/Shiva-Verma- Resume (2).9ec43385bcd8fd3ef031.pdf",
     "static/media/vscode.svg": "/static/media/vscode.c41e81d3363b36f13c61f5092edca24d.svg",
     "index.html": "/index.html",
-    "main.56b51ef7.js.map": "/static/js/main.56b51ef7.js.map"
+    "main.d7636ff6.js.map": "/static/js/main.d7636ff6.js.map"
   },
   "entrypoints": [
-    "static/js/main.56b51ef7.js"
+    "static/js/main.d7636ff6.js"
   ]
 }
