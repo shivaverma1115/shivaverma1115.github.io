@@ -7,7 +7,7 @@ import { AiOutlineMail } from "react-icons/ai"
 
 const Contacts = () => {
   return (
-    <Box id='contacts'>
+    <Box id='contact'>
       <Box w={'fit-content'} m={'auto'}  >
         <Text fontSize={30} fontWeight={600} pt={'15vh'}>Contact Me</Text>
         <Text fontWeight={800} color={'gray'}>Meet you soon ...</Text>

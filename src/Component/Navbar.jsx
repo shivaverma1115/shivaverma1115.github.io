@@ -12,7 +12,7 @@ const Navbar = () => {
     { id: "about", title: "About",className:"nav-link about" },
     { id: "skills", title: "Skills" ,className:"nav-link skills"},
     { id: "projects", title: "Projects",className:"nav-link projects" },
-    { id: "contacts", title: "Contacts",className:"nav-link contact" },
+    { id: "contact", title: "Contacts",className:"nav-link contact" },
   ]
 
   return (

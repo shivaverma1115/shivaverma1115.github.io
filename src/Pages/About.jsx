@@ -36,8 +36,8 @@ const About = () => {
           </Box>
         </Box>
       </Box>
-      <Box className="home-img" m={'auto'} maxW={['100%','100%','30%']} >
-        <img src={ShivaPic}></img>
+      <Box  m={'auto'} maxW={['100%','100%','30%']} >
+        <img className="home-img" src={ShivaPic}></img>
       </Box>
     </Flex>
   )
