@@ -37,54 +37,42 @@ const Contacts = () => {
         <Box id='contacts' w={'fit-content'} m={'auto'}  >
           <Text my={5} fontWeight={800} color={'gray'}>You can also Contact Me...</Text>
         </Box>
-        <Flex maxW={'50vh'}m={'auto'} >
-          <Box id="contact-github" fontSize={30} w={'fit-content'} m={'auto'} >
-            <Link target='_blank' href='https://github.com/shivaverma1115' ><AiFillGithub /></Link>
+        <Flex maxW={'70vh'} m={'auto'} display={['block','block','flex']} >
+          <Box id="contact-github" fontSize={30} w={'fit-content'} m={'auto'}p={5} >
+            <Link target='_blank' href='https://github.com/shivaverma1115' >
+              <Box textAlign={'center'}>
+                <Box w={'fit-content'} m={'auto'}><AiFillGithub /></Box>
+                <Text fontSize={20} fontWeight={700} >GitHub</Text>
+                <Text fontSize={15} textAlign={'center'}>Shiva_Verma</Text>
+              </Box>
+              </Link>
           </Box>
-          <Box  id="contact-linkedin" fontSize={30} w={'fit-content'} m={'auto'} >
-            <Link target='_blank' href='https://www.linkedin.com/in/developer-shiva-7a8450248/' ><AiOutlineLinkedin /></Link>
+          <Box id="contact-linkedin" fontSize={30} w={'fit-content'} m={'auto'} p={5}>
+            <Link target='_blank' href='https://www.linkedin.com/in/developer-shiva-7a8450248/' >
+              <Box textAlign={'center'}>
+                <Box w={'fit-content'} m={'auto'}><AiOutlineLinkedin /></Box>
+                <Text fontSize={20} fontWeight={700} >LinkedIn</Text>
+                <Text fontSize={15} textAlign={'center'}>Developer Shiva</Text>
+              </Box>
+            </Link>
           </Box>
-          <Box id="contact-phone" fontSize={30} w={'fit-content'} m={'auto'} >
-            <>
-              <AiTwotonePhone onClick={onOpen}/>
-              <AlertDialog
-                motionPreset='slideInBottom'
-                leastDestructiveRef={cancelRef}
-                onClose={onClose}
-                isOpen={isOpen}
-                isCentered
-              >
-                <AlertDialogOverlay />
-
-                <AlertDialogContent >
-                  <AlertDialogCloseButton />
-                  <AlertDialogBody   py={5} fontSize={15}fontWeight={500} >
-                    WhatsApp No. :- <spna id="contact-phone">+91-8004716907</spna>
-                  </AlertDialogBody>
-                </AlertDialogContent>
-              </AlertDialog>
-            </>
+          <Box id="contact-phone" fontSize={30} w={'fit-content'} m={'auto'}p={5} >
+            <Link target='_blank' href='tel:+91 8004716907' rel='noreferrer'>
+              <Box textAlign={'center'}>
+                <Box w={'fit-content'} m={'auto'}><AiTwotonePhone /></Box>
+                <Text fontSize={20} fontWeight={700} >Phone</Text>
+                <Text fontSize={15} textAlign={'center'}>+91 8004716907</Text>
+              </Box>
+            </Link>
           </Box>
-          <Box id="contact-email" fontSize={30} w={'fit-content'} m={'auto'} >
-            <>
-              <AiOutlineMail onClick={onOpen}/>
-              <AlertDialog
-                motionPreset='slideInBottom'
-                leastDestructiveRef={cancelRef}
-                onClose={onClose}
-                isOpen={isOpen}
-                isCentered
-              >
-                <AlertDialogOverlay />
-
-                <AlertDialogContent >
-                  <AlertDialogCloseButton />
-                  <AlertDialogBody   py={5} fontSize={15}fontWeight={500} >
-                    Email :- <spna  id="contact-email">shivaverma1115@gmail.com</spna>
-                  </AlertDialogBody>
-                </AlertDialogContent>
-              </AlertDialog>
-            </>
+          <Box id="contact-email" fontSize={30} w={'fit-content'} m={'auto'}p={5} >
+            <Link target='_blank' href='mailto:shivaverma1115@gmail.com' rel='noreferrer' >
+              <Box textAlign={'center'}>
+                <Box w={'fit-content'} m={'auto'}><AiOutlineMail /></Box>
+                <Text fontSize={20} fontWeight={700} >Email</Text>
+                <Text fontSize={15} textAlign={'center'}>shivaverma1115@gmail.com</Text>
+              </Box>
+            </Link>
           </Box>
         </Flex>
         <Box m={'auto'} w={'90%'} >
