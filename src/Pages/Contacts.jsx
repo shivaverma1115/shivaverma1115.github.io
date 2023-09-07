@@ -1,22 +1,11 @@
-import { Box, Button, Flex, Input, Link, Text, Textarea, WrapItem, useDisclosure } from '@chakra-ui/react'
+import { Box, Flex, Input, Link, Text, Textarea } from '@chakra-ui/react'
 import React from 'react'
 import { AiFillGithub } from "react-icons/ai"
 import { AiOutlineLinkedin } from "react-icons/ai"
 import { AiTwotonePhone } from "react-icons/ai"
 import { AiOutlineMail } from "react-icons/ai"
-import {
-  AlertDialog,
-  AlertDialogBody,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogContent,
-  AlertDialogOverlay,
-  AlertDialogCloseButton,
-} from '@chakra-ui/react'
 
 const Contacts = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const cancelRef = React.useRef()
   return (
     < >
       <Box id='contact' w={'fit-content'} m={'auto'}  >

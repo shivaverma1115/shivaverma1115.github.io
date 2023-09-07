@@ -1,6 +1,6 @@
 import { Box, Text, Button, Flex, Spacer, Link } from '@chakra-ui/react'
 import React from 'react'
-import Resume from "../Essentials/Shiva-Verma- Resume (2).pdf"
+import Resume from "../Essentials/Shiva-Verma-Resume.pdf"
 import ShivaPic from "../Essentials/ShivaPic1-modified.png"
 import { BiDownload } from 'react-icons/bi';
 

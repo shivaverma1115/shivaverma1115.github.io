@@ -1,10 +1,10 @@
-import { Box, ChakraProvider, Flex, Spacer, theme, useColorMode, Button, Link as ResumeLink } from '@chakra-ui/react'
-import React, { useContext } from 'react'
+import { Box, ChakraProvider, Flex, Spacer, theme, Button, Link as ResumeLink } from '@chakra-ui/react'
+import React from 'react'
 import { ColorModeSwitcher } from '../ColorModeSwitcher'
 import { BiDownload } from 'react-icons/bi';
 import { Link } from "react-scroll";
 import DrawerChakra from '../Pages/DrawerChakra';
-import Resume from "../Essentials/Shiva-Verma- Resume (2).pdf"
+import Resume from "../Essentials/Shiva-Verma-Resume.pdf"
 
 const Navbar = () => {
   const links = [

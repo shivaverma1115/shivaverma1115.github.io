@@ -2,20 +2,17 @@ import React from 'react'
 import {
     Drawer,
     DrawerBody,
-    DrawerFooter,
     DrawerHeader,
     DrawerOverlay,
     DrawerContent,
-    DrawerCloseButton,
     useDisclosure,
-    RadioGroup,
     Button,
     Box,
     ChakraProvider,
     theme,
     Link as ResumeLink ,
 } from '@chakra-ui/react'
-import Resume from "../Essentials/Shiva-Verma- Resume (2).pdf"
+import Resume from "../Essentials/Shiva-Verma-Resume.pdf"
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from "react-scroll";
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
