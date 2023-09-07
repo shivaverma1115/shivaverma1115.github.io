@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.09a446cd.js",
+    "main.js": "/static/js/main.2635761b.js",
     "static/media/ShivaPic1-modified.png": "/static/media/ShivaPic1-modified.09adc597b4a9bb88fcb6.png",
+    "static/media/downlordhub.png": "/static/media/downlordhub.e13816dab497be7fb50e.png",
     "static/media/Alcazar.png": "/static/media/Alcazar.efd13efd260b59fb788f.png",
     "static/media/pharmacy.png": "/static/media/pharmacy.69fc8d54a312eb7f3a26.png",
     "static/media/Adventure.png": "/static/media/Adventure.63f8d9eacfc1abc85036.png",
-    "static/media/Shiva-Verma- Resume (2).pdf": "/static/media/Shiva-Verma- Resume (2).9ec43385bcd8fd3ef031.pdf",
+    "static/media/Shiva-Verma-Resume.pdf": "/static/media/Shiva-Verma-Resume.737b7afd6ce37bfc645d.pdf",
     "static/media/vscode.svg": "/static/media/vscode.c41e81d3363b36f13c61f5092edca24d.svg",
     "index.html": "/index.html",
-    "main.09a446cd.js.map": "/static/js/main.09a446cd.js.map"
+    "main.2635761b.js.map": "/static/js/main.2635761b.js.map"
   },
   "entrypoints": [
-    "static/js/main.09a446cd.js"
+    "static/js/main.2635761b.js"
   ]
 }
