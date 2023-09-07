@@ -1,4 +1,4 @@
-import { Box, ChakraProvider, Flex, Spacer, theme, Button, Link as ResumeLink } from '@chakra-ui/react'
+import { Box, ChakraProvider, Flex, Spacer, theme, Button, Link as ResumeLink, useToast } from '@chakra-ui/react'
 import React from 'react'
 import { ColorModeSwitcher } from '../ColorModeSwitcher'
 import { BiDownload } from 'react-icons/bi';
@@ -15,6 +15,8 @@ const Navbar = () => {
     { id: "contact", title: "Contacts", className: "nav-link contact" },
   ]
 
+  const toast = useToast()
+
   return (
     <Flex id="nav-menu" bg={'#60a5fa'} w={'100%'} color={'white'} position={'sticky'} top={0} >
       <Box id="user-detail-name" fontSize={30} fontWeight={700} ml={[3, 10, 10]} cursor={'pointer'} >
@@ -27,8 +29,17 @@ const Navbar = () => {
             <Link className={ele.className} key={i} to={ele.id} style={{ marginLeft: "30px" }} spy={true} smooth={true} offset={50} duration={500} ><a>{ele.title}</a></Link>
           )
         })}
-        <Button target='_blank'  id="resume-button-1" className="nav-link resume" fontSize={20} colorScheme='#60a5fa' leftIcon={<BiDownload />} ml={5} >
-          <ResumeLink  id="resume-link-1" href={Resume} target='_blank' download={"Shiva_Verma_Resume.pdf"}>RESUME </ResumeLink>
+        <Button target='_blank' id="resume-button-1" className="nav-link resume" fontSize={20} colorScheme='#60a5fa' leftIcon={<BiDownload />} ml={5} >
+          <ResumeLink id="resume-link-1" href={Resume} target='_blank' download={"Shiva_Verma_Resume.pdf"}
+            onClick={() =>
+              toast({
+                title: 'Shiva Verma-Resume Downloaded.',
+                status: 'success',
+                duration: 9000,
+                isClosable: true,
+              })
+            }
+           >RESUME </ResumeLink>
         </Button>
         <ChakraProvider theme={theme} >
           <ColorModeSwitcher justifySelf="flex-end" />

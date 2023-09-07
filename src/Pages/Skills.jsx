@@ -64,7 +64,7 @@ const Skills = () => {
           </GridItem>
           <GridItem m={10} outline={'2px solid #1976d2'} p={7} borderRadius={10} style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ color: '#1976d2', cursor: 'pointer' }} >
             <SiNetlify fontSize={70} />
-            <p>JS</p>
+            <p>Netlify</p>
           </GridItem>
         </Grid>
       </Box>
