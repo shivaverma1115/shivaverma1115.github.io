@@ -30,10 +30,10 @@ const Navbar = () => {
           )
         })}
         <Button target='_blank' id="resume-button-1" className="nav-link resume" fontSize={20} colorScheme='#60a5fa' leftIcon={<BiDownload />} ml={5} >
-          <ResumeLink id="resume-link-1" href={Resume} target='_blank' download={"Shiva_Verma_Resume.pdf"}
+          <ResumeLink id="resume-link-1" href={Resume} target='_blank' download={"Shiva-Verma-Resume"}
             onClick={() =>
               toast({
-                title: 'Shiva Verma-Resume Downloaded.',
+                title: "Shiva-Verma-Resume",
                 status: 'success',
                 duration: 9000,
                 isClosable: true,

@@ -29,10 +29,10 @@ const About = () => {
               <Spacer />
               <Button id="resume-button-2" m={'auto'} >
                 <BiDownload fontSize={['40px', '40px', '10px']} />
-                <Link id="resume-link-2" style={{ marginLeft: "10px" }} href={Resume} target='_blank' download={"Shiva_Verma_Resume.pdf"}
+                <Link id="resume-link-2" style={{ marginLeft: "10px" }} href={Resume} target='_blank' download={"Shiva-Verma-Resume"}
                   onClick={() =>
                     toast({
-                      title: 'Shiva Verma-Resume Downloaded.',
+                      title: "Shiva-Verma-Resume",
                       status: 'success',
                       duration: 9000,
                       isClosable: true,
