@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 import DrawerChakra from '../Pages/DrawerChakra';
 import Resume from "../Essentials/Shiva-Verma-Resume.pdf"
 
+
 const Navbar = () => {
   const links = [
     { id: "home", title: "Home", className: "nav-link home" },

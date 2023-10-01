@@ -1,8 +1,9 @@
 import { Box, Text, Button, Flex, Spacer, Link, useToast } from '@chakra-ui/react'
 import React from 'react'
 import Resume from "../Essentials/Shiva-Verma-Resume.pdf"
-import ShivaPic from "../Essentials/Shiva-Verma-Resume.png"
+import ShivaPic from "../Essentials/Shiva-Verma-Resume.pdf"
 import { BiDownload } from 'react-icons/bi';
+
 
 const About = () => {
   const toast = useToast()
