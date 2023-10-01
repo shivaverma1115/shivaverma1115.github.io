@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.1837e839.js",
+    "main.js": "/static/js/main.6d9a51ea.js",
+    "static/media/Shiva-Verma-Resume.pdf": "/static/media/Shiva-Verma-Resume.45f758cb17c22aaaa6a7.pdf",
     "static/media/ShivaPic1-modified.png": "/static/media/ShivaPic1-modified.4f9e5fef784908898abd.png",
     "static/media/downlordhub.png": "/static/media/downlordhub.e13816dab497be7fb50e.png",
     "static/media/Alcazar.png": "/static/media/Alcazar.efd13efd260b59fb788f.png",
     "static/media/pharmacy.png": "/static/media/pharmacy.69fc8d54a312eb7f3a26.png",
     "static/media/Adventure.png": "/static/media/Adventure.63f8d9eacfc1abc85036.png",
-    "static/media/Shiva-Verma-Resume.pdf": "/static/media/Shiva-Verma-Resume.737b7afd6ce37bfc645d.pdf",
     "static/media/vscode.svg": "/static/media/vscode.c41e81d3363b36f13c61f5092edca24d.svg",
     "index.html": "/index.html",
-    "main.1837e839.js.map": "/static/js/main.1837e839.js.map"
+    "main.6d9a51ea.js.map": "/static/js/main.6d9a51ea.js.map"
   },
   "entrypoints": [
-    "static/js/main.1837e839.js"
+    "static/js/main.6d9a51ea.js"
   ]
 }
