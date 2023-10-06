@@ -1,11 +1,20 @@
 import { Box, Text, Button, Flex, Spacer, Link, useToast } from '@chakra-ui/react'
 import React from 'react'
 import Resume from "../Essentials/Shiva-Verma-Resume.pdf"
-import ShivaPic from "../Essentials/Shiva-Verma-Resume.pdf"
+import ShivaPic from "../Essentials/ShivaPic1.png"
 import { BiDownload } from 'react-icons/bi';
 
 
 const About = () => {
+  const handleDownload = () => {
+    window.open(Resume, '_blank');
+    toast({
+      title: "Resume-downloading",
+      status: 'success',
+      duration: 5000,
+      isClosable: true,
+    })
+  };
   const toast = useToast()
   return (
     <Flex id="about" className="about section" w={'90%'} m={'auto'} display={['block', 'block', 'flex']} minH={'94vh'} >
@@ -29,16 +38,16 @@ const About = () => {
               </Text>
               <Spacer />
               <Button id="resume-button-2" m={'auto'} >
-                <BiDownload fontSize={['40px', '40px', '10px']} />
-                <Link id="resume-link-2" style={{ marginLeft: "10px" }} href={Resume} target='_blank' download={"Shiva-Verma-Resume"}
-                  onClick={() =>
-                    toast({
-                      title: "Shiva-Verma-Resume",
-                      status: 'success',
-                      duration: 9000,
-                      isClosable: true,
-                    })
-                  }
+                <BiDownload
+                  fontSize={['40px', '40px', '10px']}
+                />
+                <Link
+                  id="resume-link-2"
+                  style={{ marginLeft: "10px" }}
+                  rel="noreferrer"
+                  onClick={handleDownload}
+                  href={Resume}
+                  download={"Shiva-Verma-Resume"}
                 >
                   RESUME
                 </Link>
@@ -48,7 +57,7 @@ const About = () => {
         </Box>
       </Box>
       <Box m={'auto'} maxW={['100%', '100%', '25%']} >
-        <img className="home-img" src={ShivaPic}/>
+        <img className="home-img" src={ShivaPic} />
       </Box>
     </Flex>
   )
