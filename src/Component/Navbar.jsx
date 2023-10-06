@@ -18,6 +18,16 @@ const Navbar = () => {
 
   const toast = useToast()
 
+  const handleDownload = () => {
+    window.open(Resume, '_blank');
+    toast({
+      title: "Resume-downloading",
+      status: 'success',
+      duration: 5000,
+      isClosable: true,
+    })
+  };
+
   return (
     <Flex id="nav-menu" bg={'#60a5fa'} w={'100%'} color={'white'} position={'sticky'} top={0} >
       <Box id="user-detail-name" fontSize={30} fontWeight={700} ml={[3, 10, 10]} cursor={'pointer'} >
@@ -31,16 +41,13 @@ const Navbar = () => {
           )
         })}
         <Button target='_blank' id="resume-button-1" className="nav-link resume" fontSize={20} colorScheme='#60a5fa' leftIcon={<BiDownload />} ml={5} >
-          <ResumeLink id="resume-link-1" href={Resume} target='_blank' download={"Shiva-Verma-Resume"}
-            onClick={() =>
-              toast({
-                title: "Shiva-Verma-Resume",
-                status: 'success',
-                duration: 9000,
-                isClosable: true,
-              })
-            }
-           >RESUME </ResumeLink>
+          <ResumeLink id="resume-link-1"
+            rel="noreferrer"
+            onClick={handleDownload}
+            href={Resume}
+            download={"Shiva-Verma-Resume"}
+          >RESUME
+          </ResumeLink>
         </Button>
         <ChakraProvider theme={theme} >
           <ColorModeSwitcher justifySelf="flex-end" />
