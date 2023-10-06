@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.f1c50065.js",
+    "main.js": "/static/js/main.af99e41a.js",
     "static/media/Shiva-Verma-Resume.pdf": "/static/media/Shiva-Verma-Resume.45f758cb17c22aaaa6a7.pdf",
     "static/media/ShivaPic1.png": "/static/media/ShivaPic1.4f9e5fef784908898abd.png",
     "static/media/downlordhub.png": "/static/media/downlordhub.e13816dab497be7fb50e.png",
@@ -9,9 +9,9 @@
     "static/media/Adventure.png": "/static/media/Adventure.63f8d9eacfc1abc85036.png",
     "static/media/vscode.svg": "/static/media/vscode.c41e81d3363b36f13c61f5092edca24d.svg",
     "index.html": "/index.html",
-    "main.f1c50065.js.map": "/static/js/main.f1c50065.js.map"
+    "main.af99e41a.js.map": "/static/js/main.af99e41a.js.map"
   },
   "entrypoints": [
-    "static/js/main.f1c50065.js"
+    "static/js/main.af99e41a.js"
   ]
 }
