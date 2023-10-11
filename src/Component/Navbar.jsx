@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <Flex id="nav-menu" bg={'#60a5fa'} w={'100%'} color={'white'} position={'fixed'} top={0} >
+    <Flex id="nav-menu" bg={'#60a5fa'} w={'100%'} color={'white'} position={'sticky'} top={0} >
       <Box id="user-detail-name" fontSize={30} fontWeight={700} ml={[3, 10, 10]} cursor={'pointer'} >
         Shiva Verma
       </Box>
