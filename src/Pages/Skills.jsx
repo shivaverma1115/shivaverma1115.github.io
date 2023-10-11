@@ -19,7 +19,7 @@ const Skills = () => {
           <Text fontSize={30} fontWeight={600}>My Skills</Text>
           <Text fontWeight={800} color={'gray'}>My Knowledge</Text>
         </Box>
-        <Grid fontSize={20} textAlign={'center'} templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)', 'repeat(5, 1fr)']} gap={0} w={'fit-content'} m={'auto'}>
+        <Grid fontSize={20} textAlign={'center'} templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)', 'repeat(4, 1fr)', 'repeat(5, 1fr)', 'repeat(6, 1fr)']} gap={0} w={'fit-content'} m={'auto'}>
           <GridItem className="skills-card" m={10} outline={'2px solid #1976d2'} p={7} borderRadius={10} style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ color: '#1976d2', cursor: 'pointer' }} >
             <AiOutlineHtml5  className="skills-card-img" fontSize={70} />
             <Text className="skills-card-name">HTML</Text>
