@@ -117,7 +117,7 @@ const Projects = () => {
                     {
                       ele.api != "" ? (
                         <>
-                          < Button my={1} mx={1} className="project-github-link" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ cursor: 'pointer' }} leftIcon={<AiOutlineApi />} colorScheme='purple' variant='solid'>
+                          < Button my={1} mx={1} className="project-github-link" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ cursor: 'pointer' }} leftIcon={<AiOutlineApi />} colorScheme='linkedin' variant='solid'>
                             <Link target='_blank' href={ele.api} >API Link</Link>
                           </Button>
                           <Spacer />

@@ -26,7 +26,7 @@ const Contacts = () => {
         <Box id='contacts' w={'fit-content'} m={'auto'}  >
           <Text my={5} fontWeight={800} color={'gray'}>You can also Contact Me...</Text>
         </Box>
-        <Flex maxW={'70vh'} m={'auto'} display={['block','block','flex']} >
+        <Flex maxW={'70%'} m={'auto'} display={['block','block','flex']} >
           <Box id="contact-github" fontSize={30} w={'fit-content'} m={'auto'}p={5} >
             <Link target='_blank' href='https://github.com/shivaverma1115' >
               <Box textAlign={'center'}>

@@ -11,13 +11,13 @@ import Contacts from './Pages/Contacts';
 function App() {
   return (
     <>
-      <Navbar />
       <Home />
       <About/>
       <Skills/>
       <Projects/>
       <GitHubSubmission/>
       <Contacts/>
+      <Navbar />
     </>
   );
 }
