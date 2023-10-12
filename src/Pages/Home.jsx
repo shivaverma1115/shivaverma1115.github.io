@@ -7,7 +7,7 @@ const Home = () => {
   const { Toggle } = useContext(AuthContext);
   
   return (
-    <Flex id='home' display={['block', 'block', 'flex']} minH={['50vh', '94vh', '94vh']} >
+    <Flex mt={'5vh'} id='home' display={['block', 'block', 'flex']} minH={['50vh', '94vh', '94vh']} >
       <Box w={['100%', '100%', '50%']} m={'auto'} p={[10, 10, 0]} >
         <TypeWriterReact />
       </Box>

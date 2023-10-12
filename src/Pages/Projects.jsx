@@ -109,25 +109,25 @@ const Projects = () => {
                       }
                     </Grid>
                   </Box>
-                  < Flex display={['box','box','flex']} w={'fit-content'}m={'auto'} my={3} >
-                    <Button my={1} mx={1} className="project-github-link" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ cursor: 'pointer' }} leftIcon={<AiFillGithub />} colorScheme='purple' variant='solid'>
+                  < Flex w={'fit-content'}m={'auto'} my={3} >
+                    <Button w={['100%','50%','100%']} my={1} mx={1} className="project-github-link" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ cursor: 'pointer' }} leftIcon={<AiFillGithub />} colorScheme='purple' variant='solid'>
                       <Link target='_blank' href={ele.githubLink} >GitHub</Link>
                     </Button>
                     <Spacer />
+                    <Button w={['100%','50%','100%']} my={1} mx={1} className="project-deployed-link" target='_blank' style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ cursor: 'pointer' }} leftIcon={<RiNavigationLine />} colorScheme='facebook' variant='solid'>
+                      <Link target='_blank' href={ele.live} >Live</Link>
+                    </Button>
+                  </Flex>
                     {
                       ele.api != "" ? (
-                        <>
+                        <Box m={'auto'} w={'fit-content'} >
                           < Button my={1} mx={1} className="project-github-link" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ cursor: 'pointer' }} leftIcon={<AiOutlineApi />} colorScheme='linkedin' variant='solid'>
                             <Link target='_blank' href={ele.api} >API Link</Link>
                           </Button>
                           <Spacer />
-                        </>
+                        </Box>
                       ):""
                     }
-                    <Button my={1} mx={1} className="project-deployed-link" target='_blank' style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', }} _hover={{ cursor: 'pointer' }} leftIcon={<RiNavigationLine />} colorScheme='facebook' variant='solid'>
-                      <Link target='_blank' href={ele.live} >Live</Link>
-                    </Button>
-                  </Flex>
                 </GridItem>
               )
             })
