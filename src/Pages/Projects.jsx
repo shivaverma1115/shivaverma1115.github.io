@@ -28,7 +28,7 @@ const Projects = () => {
         { title: "ChakraUI" },
         { title: "GitHub" },
       ],
-      api: "https://downlordhubmongodb-production.up.railway.app/movies",
+      api: "https://downloadbackened.onrender.com/movies",
     },
     {
       img: Adventure,
