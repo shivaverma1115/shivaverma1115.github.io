@@ -5,6 +5,7 @@ import { BiDownload } from 'react-icons/bi';
 import { Link } from "react-scroll";
 import DrawerChakra from '../Pages/DrawerChakra';
 import Resume from "../Essentials/Shiva-Verma-Resume.pdf"
+import SwithMode from '../Pages/SwithMode';
 
 
 const Navbar = () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
         Shiva Verma
       </Box>
       <Spacer />
-      <Box my={'auto'} fontSize={20} display={['none', 'none', 'block']} cursor={'pointer'}  >
+      <Flex my={'auto'} fontSize={20} display={['none', 'none', 'block']} cursor={'pointer'}  >
         {links.map((ele, i) => {
           return (
             <Link className={ele.className} key={i} to={ele.id} style={{ marginLeft: "30px" }} spy={true} smooth={true} offset={50} duration={500} ><a>{ele.title}</a></Link>
@@ -49,9 +50,9 @@ const Navbar = () => {
           >RESUME
           </ResumeLink>
         </Button>
-        <ChakraProvider theme={theme} >
-          <ColorModeSwitcher justifySelf="flex-end" />
-        </ChakraProvider>
+      </Flex>
+      <Box my={'auto'}w={'5vh'}ml={5}display={['none', 'none', 'block']} >
+        <SwithMode />
       </Box>
       <Box display={['block', 'block', 'none']} fontSize={30} m={'auto'} mr={[1, 10, 10]} color={'white'}>
         <DrawerChakra links={links} />
