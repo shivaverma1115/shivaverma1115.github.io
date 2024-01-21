@@ -1,8 +1,9 @@
 import { Box, Text, Button, Flex, Spacer, Link, useToast } from '@chakra-ui/react'
-import React from 'react'
+import React, { useContext } from 'react'
 import Resume from "../Essentials/Shiva-Verma-Resume.pdf"
 import ShivaPic from "../Essentials/ShivaPic1.png"
 import { BiDownload } from 'react-icons/bi';
+import { AuthContext } from '../ContextAPI/ContextProvider';
 
 
 const About = () => {
@@ -15,7 +16,8 @@ const About = () => {
       isClosable: true,
     })
   };
-  const toast = useToast()
+  const toast = useToast()  ;
+  const {Toggle} = useContext(AuthContext) ;
   return (
     <Flex id="about" className="about section" w={'90%'} m={'auto'} display={['block', 'block', 'flex']} minH={'94vh'} >
 
@@ -37,7 +39,7 @@ const About = () => {
                 Traveling
               </Text>
               <Spacer />
-              <Button id="resume-button-2" m={'auto'} >
+              <Button id="resume-button-2" m={'auto'}color={Toggle?'white':'black'} >
                 <BiDownload
                   fontSize={['40px', '40px', '10px']}
                 />
