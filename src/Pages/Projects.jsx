@@ -12,6 +12,23 @@ import SkilTags from './SkilTags'
 const Projects = () => {
   const projects = [
     {
+      img: 'https://res.cloudinary.com/dbbuqesjg/image/upload/v1705740880/Desney_hotstar/thumnails/laptop_fiiryz.png',
+      githubLink: "https://github.com/shivaverma1115/Disney-Hotstar",
+      live: "https://disneyhotstar-h4cwtwpnn-shivaverma1115.vercel.app/",
+      title: "Desney+hotstar",
+      desc: "Experience a fully responsive and visually appealing web interface that grants convenient access to the newest Disney+ Hotstart content. Built with a robust tech stack, this project demonstrates proficiency in React.js, Redux, JSON data management, and Chakra UI for seamless styling. It has an extensive library of movies to choose from, including new releases, classic films, and foreign films. ",
+      tags: [
+        { title: "HTML" },
+        { title: "CSS" },
+        { title: "JS" },
+        { title: "React.js" },
+        { title: "React-slick" },
+        { title: "ChakraUI" },
+        { title: "GitHub" },
+      ],
+      api: "https://downloadbackened.onrender.com/movies",
+    },
+    {
       img: DownlordHub,
       githubLink: "https://github.com/shivaverma1115/DownloadHubFrontened",
       live: "https://create-react-app-seven-teal-51.vercel.app/",
